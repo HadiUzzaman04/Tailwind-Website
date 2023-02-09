@@ -5,268 +5,462 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Home Page</title>
 </head>
 
 <body>
-    <!--Navbar-->
-    <nav class="relative container mx-auto p-6">
-        <!--Flex Container-->
-        <div class="flex items-center justify-between">
-            <!--Logo-->
-            <div class="pt-2">
-                <img src="img/logo.svg" alt="logo">
+    <nav class="sticky top-0 z-10 border-b border-gray-200 bg-white">
+        <div class="bg-white max-w-[85rem] lg:max-w-[70rem] md:max-w-[58rem] sm:max-w-[45rem]  mx-auto py-6">
+    
+            <div class="flex items-center justify-between md:px-5 sm:px-1 xs:px-10 lg:px-5 ">
+                <!--Logo-->
+                <div class="pt-2">
+                    <img src="img/logo.svg" alt="logo">
+                </div>
+                <!--Nav Item-->
+                <div class="flex space-x-5 pr-20 md:pr-6 sm:pr-0 xs:hidden  text-black">
+                    <a href="index.html" class=" hover:bg-green-500 hover:text-white font-semibold px-2 py-1 hover:rounded-md">Home</a>
+                    <a href="aboutus.html" class="hover:bg-green-500 px-2 py-1 font-semibold hover:text-white hover:rounded-md">About Us</a>
+                    <a href="service.html" class="hover:bg-green-500 px-2 py-1 font-semibold hover:text-white hover:rounded-md">Service</a>
+                    <a href="event.html" class="hover:bg-green-500 px-2 py-1 font-semibold hover:text-white hover:rounded-md">Event</a>
+                    <a href="gallery.html" class="hover:bg-green-400 px-2 py-1 font-semibold hover:text-white hover:rounded-md">Gallery</a>
+                    <a href="contact.html" class="bg-green-400 px-3 py-2 font-semibold text-white rounded-md">Contact</a>
+                    <!-- <a href="{{route('website.portfolio')}}" class="hover:bg-green-800 px-2 py-1 hover:rounded-md"> Company Portfolio</a> -->
+                </div>
+                <div class="xs:block xxl:hidden xl:hidden lg:hidden md:hidden sm:hidden" id="hamburg">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></svg>
+                </div>
             </div>
-            <!--Nav Item-->
-            <div class="hidden md:flex space-x-12">
-                <a href="index.html" class="hover:text-blue-500">Home</a>
-                <a href="#" class="hover:text-blue-500">Service</a>
-                <a href="#" class="hover:text-blue-500">Event</a>
-                <a href="#" class="hover:text-blue-500">Contact</a>
-                <a href="#" class="hover:text-blue-500">Gallery</a>
-                <a href="#" class="hover:text-blue-500">Company</a>
-            </div>
-            <!--Button-->
-            <a href=""
-                class="hidden md:block p-3 px-6 pt-2 text-white bg-blue-600 rounded-full baseline hover:bg-blue-300">Demo</a>
+    
         </div>
+        <!--Flex Container-->
     </nav>
-    <!--Hero Section-->
-    <section id="slider">
-        <!--Flex Container-->
-        <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+    <section id="slider" class="slider-bg700 bg-transparent pb-16 relative shape_rotated">
+
+        <div class="max-w-[85rem] lg:max-w-[70rem] md:max-w-[58rem] sm:max-w-[48rem] xs:max-w-[18rem] mx-auto hero_slide">
             <!--Left Item-->
-            <div class="flex flex-col  space-y-5">
-                <h1 class="max-w-xl text-xl front-bold text-center  text-blue-400">Scalable and Secured Platform for
-                    Retail & Wholesale SMS Business</h1>
-
-                <P class="max-w-sm text-center">
-                    Client Management, Client Management, Campaign Management
-                </P>
-                <div class="flex justify-center">
-
-                    <a href="" class=" p-3 px-6 pt-2 text-white bg-blue-400 rounded-full baseline hover:bg-blue-500">Get
-                        Free Demo</a>
+            <div class="py-28 lg:py-11">
+                <div class="flex items-center sm:hidden xs:hidden">
+                    <div class="space-y-5">
+                        <h1 class="max-w-xl text-5xl front-bold text-start  text-black lg:text-4xl md:text-xl"><span class=" font-bold animate-text lg:text-4xl">To Know More</h1>
+                        <div class="flex justify-start ">
+    
+                            <a href="#" class=" p-3 px-6 pt-2 text-white font-semibold shadow-md drop-shadow-md bg-green-400 rounded-full baseline hover:bg-green-500">Contact Us</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!--Image-->
-            <div class="md:w-1/2">
-                <img src="img/illustration-intro.svg" alt="image" />
+        </div>
+        <div class="absolute top-[50px] lg:top-[0px] right-[200px] xs:right-[50px]">
+            <div class="w-full flex justify-end">
+                <!-- <img src="{{asset('storage/1673951024.jpg')}}" alt="image" /> -->
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_8vyvisg1.json" background="transparent" speed="1" class="lottie" loop autoplay></lottie-player>
+            </div>
+        </div>
+        <div class="bg-myGreen-100 mt-48 lg:mt-52">
+    
+            <div class="max-w-[85rem] lg:max-w-[70rem] md:max-w-[58rem] sm:max-w-[40rem] xs:max-w-[18rem] mx-auto pt-16 pb-24 xs:pb-10">
+                <p class="capitalize py-10 text-center font-semibold text-4xl sm:text-2xl xs:text-xl"><span class="font-bold animate-text">Customers</span> Who Trust Us</p>
+                <div class="grid grid-cols-5 gap-5 sm:grid-cols-3 sm:p-5 xs:grid-cols-1 xs:p-5 md:grid-cols-3 md:pr-5 md:pl-5">
+                    <div class="bg-gray-50 rounded-lg h-40 flex justify-center shadow-md xs:h-20 md:h-30">
+                        <img src="img/Amazon.png" class="h-full" />
+                    </div>
+                    <div class="bg-gray-50 rounded-lg h-40 flex justify-center shadow-md xs:h-20 md:h-30">
+                        <img src="img/Axiata.png" class="h-full" />
+                    </div>
+                    <div class="bg-gray-50 rounded-lg h-40 flex justify-center shadow-md xs:h-20 md:h-30">
+                        <img src="img/Emirates.png" class="h-full" />
+                    </div>
+                    <div class="bg-gray-50 rounded-lg h-40 flex justify-center shadow-md xs:h-20 md:h-30">
+                        <img src="img/Google.png" class="h-full" />
+                    </div>
+                    <div class="bg-gray-50 rounded-lg h-40 flex justify-center shadow-md xs:h-20 md:h-30">
+                        <img src="img/Grameenphone.png" class="h-full" />
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <section>
+        <div class="mt-7  mx-auto max-w-[85rem] lg:max-w-[70rem] md:max-w-[58rem] sm:max-w-[40rem] xs:max-w-[18rem]">
+            <div>
+                <p class="text-4xl font-semibold text-center md:text-2xl sm:text-2xl xs:text-xl">Cutting Edge Solution for</p>
+                <p class="text-4xl font-semibold text-center md:text-2xl sm:text-2xl xs:text-xl">your Business</p>
+            </div>
+    
+            <div class="grid grid-cols-4 gap-5 mt-12 md:grid-cols-3 md:pl-5 md:pr-5 sm:grid-cols-2 sm:gap-10 sm:p-5 xs:grid-cols-1 xs:p-5">
+                <div class="bg-myGray-200 hover:bg-white rounded-2xl shadow-xl hover:shadow-2xl hover:drop-shadow-2xl drop-shadow-lg px-7 pt-7 pb-14 xs:pb-5 space-y-5 xs:space-y-1 xs:h-[260px]" >
+                    <div class="h-28 w-24 mx-auto">
+                        <img src="img/Telco.png" class="h-full w-full" />
+                    </div>
+                    <p class="text-center font-medium text-base">TELCOS</p>
+                    <p class="text-sm text-center font-medium">
+                        Carrier-grade SBC, OTT, Billing & Cloud Telephony products with scalability, and high performance.
+                    </p>
+                </div>
+                <div class="bg-myGray-200 hover:bg-white rounded-2xl shadow-xl hover:shadow-2xl hover:drop-shadow-2xl drop-shadow-lg px-7 pt-7 pb-14 space-y-5 xs:h-[260px] xs:pb-5 xs:space-y-1">
+                    <div class="h-28 w-24 mx-auto">
+                        <img src="img/Service-Provider.png" class="h-full w-full" />
+                    </div>
+                    <p class="text-center font-medium text-base">SERVICE PROVIDER</p>
+                    <p class="text-sm text-center font-medium">
+                        Mobile OTT Solution and A2P SMS Platform for communication service providers and SMS aggregators
+                    </p>
+    
+                </div>
+                <div class="bg-myGray-200 hover:bg-white rounded-2xl shadow-xl hover:shadow-2xl hover:drop-shadow-2xl drop-shadow-lg px-7 pt-7 pb-14 space-y-5 xs:h-[260px] xs:pb-5 xs:space-y-1">
+                    <div class="h-28 w-24 mx-auto">
+                        <img src="img/Enterprise.png" class="h-full w-full" />
+                    </div>
+                    <p class="text-center font-medium text-base">ENTERPRISE</p>
+                    <p class="text-sm font-medium">
+                        Secured Communication Platforms for enterprises for faster real-time business communication & collaboration
+                    </p>
+                </div>
+                <div class="bg-myGray-200 hover:bg-white rounded-2xl shadow-xl hover:shadow-2xl hover:drop-shadow-2xl drop-shadow-lg px-7 pt-7 pb-14 space-y-5 xs:h-[260px] xs:pb-5 xs:space-y-1">
+                    <div class="h-28 w-24 mx-auto">
+                        <img src="img/Hosted-Plat.png" class="h-full w-full" />
+                    </div>
+                    <p class="text-center font-medium text-base">HOSTED PLATFORMS</p>
+                    <p class="text-sm font-medium">
+                        Hosted Mobile VoIP, SMS Platform & Softswitch solution with a flexibility of monthly payment option
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--Services-->
-    <section id="service">
-        <div class="max-w-6xl px-5 mx-auto mt-30 text-center">
-            <h2 class="text-4xl front-bold text-center">Cutting Edge Solution for your Business</h2>
+    <section id="service" class="service-bg bg-myGreen-100 mt-14">
+        <div class=" px-5 mx-auto text-center max-w-[85rem] lg:max-w-[70rem] md:max-w-[58rem] sm:max-w-[40rem] xs:max-w-[18rem]">
+            <h2 class="text-4xl font-semibold text-center pt-10 pb-10 md:text-2xl sm:text-2xl xs:text-xl">Here are the services <span class="font-semibold animate-text">we provide</span> </h2>
             <!--service Container-->
-            <div class="flex flex-row mt-24 space-x-5">
+            <div class="grid grid-cols-3 gap-5 mb-5 xs:grid-cols-1 xs:gap-3 sm:grid-cols-2">
                 <!--Services 1-->
-                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-200 md:w-1/4">
-                    <img src="img/Telco.png" class="w-16 mt-14" alt="service" />
-                    <h5 class=" text-lg front-bold">Telcos</h5>
-                    <p class="text-sm">Carrier-grade SBC, OTT, Billing & Cloud Telephony products with scalability, and
-                        high performance.</p>
+                <div class="rounded-lg bg-gray-200">
+                    <div class="h-52 w-full">
+                        <img src="img/blog-4-720x480.jpg" class="w-full h-full rounded-t-lg" alt="service" />
+                    </div>
+                    <div class="h-12 w-30 text-lg front-bold pt-2">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white xs:text-base md:text-xl sm:text-base">Service One</h5>
+                    </div>
+                    <div class="h-12 w-30 text-sm">
+                        <p clas="mb-3 font-normal text-gray-300 dark:text-gray-400">Secured Communication Platforms for enterprises for faster real-time business communication & collaboration</p>
+                    </div>
+                    <div class="flex justify-end mb-2 ml-4 md:pr-2 sm:pr-2 lg:pr-2 xs:pr-2 ">
+                        <a href="" class="font-medium  bg-green-400 text-white rounded-md px-3 py-1 md:mt-5 md:font-thin xs:mt-8 xs:text-sm sm:font-thin">Read more</a>
+                    </div>
                 </div>
-                <!--Services 2-->
-                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-200 md:w-1/4">
-                    <img src="img/Service-Provider.png" class="w-16 mt-14" alt="service" />
-                    <h5 class=" text-lg front-bold">SERVICE PROVIDER</h5>
-                    <p class="text-sm">Mobile OTT Solution and A2P SMS Platform for communication service providers and
-                        SMS aggregators</p>
+                <div class="rounded-lg bg-gray-200">
+                    <div class="h-52 w-full">
+                        <img src="img/blog-5-720x480.jpg" class="w-full h-full rounded-t-lg" alt="service" />
+                    </div>
+                    <div class="h-12 w-30 text-lg front-bold pt-2">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white xs:text-base md:text-xl sm:text-base">Service Two</h5>
+                    </div>
+                    <div class="h-12 w-30 text-sm">
+                        <p clas="mb-3 font-normal text-gray-300 dark:text-gray-400">Secured Communication Platforms for enterprises for faster real-time business communication & collaboration</p>
+                    </div>
+                    <div class="flex justify-end mb-2 ml-4 md:pr-2 sm:pr-2 lg:pr-2 xs:pr-2 ">
+                        <a href="" class="font-medium  bg-green-400 text-white rounded-md px-3 py-1 md:mt-5 md:font-thin xs:mt-8 xs:text-sm sm:font-thin">Read more</a>
+                    </div>
                 </div>
-                <!--Services 3-->
-                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-200 md:w-1/4">
-                    <img src="img/Enterprise.png" class="w-16 mt-14" alt="service" />
-                    <h5 class=" text-lg front-bold">ENTERPRISE</h5>
-                    <p class="text-sm">Secured Communication Platforms for enterprises for faster real-time business
-                        communication & collaboration</p>
-                </div>
-                <!--Services 4-->
-                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-200 md:w-1/4">
-                    <img src="img/Hosted-Plat.png" class="w-16 mt-14" alt="service" />
-                    <h5 class=" text-lg front-bold">HOSTED PLATFORMS</h5>
-                    <p class="text-sm">Hosted Mobile VoIP, SMS Platform & Softswitch solution with a flexibility of
-                        monthly payment option</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="container">
-        <!--Flex Container-->
-        <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
-            <!--Image-->
-            <div class="md:w-1/2">
-                <img src="img/young-businessman-giving-presentation.png" alt="image" />
-            </div>
-            <!--Left Item-->
-            <div class="flex flex-col  space-y-5">
-                <h1 class="max-w-xl text-xl front-bold text-center  text-blue-400">18+ Years
-
-                    of Partnership with Telcos & Service Providers from
-
-                    80+ Countries</h1>
-                <div class="flex justify-center">
+                <div class="rounded-lg bg-gray-200">
+                    <div class="h-52 w-full">
+                        <img src="img/blog-6-720x480.jpg" class="w-full h-full rounded-t-lg" alt="service" />
+                    </div>
+                    <div class="h-12 w-30 text-lg front-bold pt-2">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white xs:text-base md:text-xl sm:text-base">Service Three</h5>
+                    </div>
+                    <div class="h-12 w-30 text-sm">
+                        <p clas="mb-3 font-normal text-gray-300 dark:text-gray-400">Secured Communication Platforms for enterprises for faster real-time business communication & collaboration</p>
+                    </div>
+                    <div class="flex justify-end mb-2 ml-4 md:pr-2 sm:pr-2 lg:pr-2 xs:pr-2 ">
+                        <a href="" class="font-medium  bg-green-400 text-white rounded-md px-3 py-1 md:mt-5 md:font-thin xs:mt-8 xs:text-sm sm:font-thin">Read more</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--Product-->
-    <section id="product">
-        <div class="max-w-6xl px-5 mx-auto mt-30 text-center space-y-5">
-            <h2 class="text-4xl front-bold text-center">Our Product</h2>
-            <!--Product Container-->
-            <div class="flex flex-row mt-24 space-x-5">
-                <!--Product 1-->
-                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-200 md:w-1/4">
-                    <img src="img/Telco.png" class="w-16 mt-14" alt="service" />
-                    <h5 class=" text-lg front-bold">SESSION BORDER CONTROLER</h5>
-                    <p class="text-sm">Resilient, Robust & Reliable Session Border Controller with high availability for
-                        real-time communications</p>
-                </div>
-                <!--Product 2-->
-                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-200 md:w-1/4">
-                    <img src="img/Service-Provider.png" class="w-16 mt-14" alt="service" />
-                    <h5 class=" text-lg front-bold">TELECOM OTT</h5>
-                    <p class="text-sm">A white label Mobile OTT Solution for communication service providers to build
-                        their own brand OTT Communication App</p>
-                </div>
-                <!--Product 3-->
-                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-200 md:w-1/4">
-                    <img src="img/Enterprise.png" class="w-16 mt-14" alt="service" />
-                    <h5 class=" text-lg front-bold">CLOUD TELEPHONY</h5>
-                    <p class="text-sm">Complete white label Cloud PBX Solution that allows you to offer cloud telephony
-                        services under your own brand</p>
-                </div>
-                <!--Product 4-->
-                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-200 md:w-1/4">
-                    <img src="img/Hosted-Plat.png" class="w-16 mt-14" alt="service" />
-                    <h5 class=" text-lg front-bold">SMS PLATFORM</h5>
-                    <p class="text-sm">Industry-leading A2P & P2A Messaging Platform with advanced routing for SMS
-                        aggregators, MNOs and MVNOs</p>
-                </div>
-            </div>
-            <div class="flex justify-center">
-                <a href="" class=" p-3 px-6 pt-2 text-white bg-blue-400 rounded-full baseline hover:bg-blue-500">Explore
+            <div class="flex justify-center pb-5">
+                <a href="#" class=" p-3 px-6 pt-2 text-white bg-green-400 rounded-full baseline font-semibold hover:bg-green-500">Explore
                     All</a>
             </div>
         </div>
     </section>
-    <!--partner-->
-    <section id="partner">
-        <div class="max-w-6xl px-5 mx-auto mt-30 text-center space-y-5">
-            <h2 class="text-4xl front-bold text-center">We are Trusted by Industry Leaders</h2>
-            <!--partner Container-->
-            <div class="flex flex-row mt-24 space-x-5">
-                <!--partner 1-->
-                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-100 md:w-1/3">
-                    <img src="img/airtel.png" class="w-30 mt-14" alt="service" />
-                </div>
-                <!--partner 2-->
-                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-100 md:w-1/3">
-                    <img src="img/bubbletone.png" class="w-30 mt-14" alt="service" />
-                </div>
-                <!--partner 3-->
-                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-100 md:w-1/3">
-                    <img src="img/btcl.png" class="w-30 mt-14" alt="service" />
-                </div>
+    <section id="container" class="company-bg">
+        <!--Flex Container-->
+        <div class="container flex flex-col-12 items-start px-6 mx-auto space-y-0 max-w-[85rem] lg:max-w-[70rem] md:max-w-[58rem] sm:max-w-[40rem] xs:max-w-[18rem]">
+            <!--Image-->
+            <div class="col-span-2 xs:pt-10">
+                <img src="img/young-businessman-giving-presentation.png" alt="image" />
+            </div>
+            <!--Left Item-->
+            <div class="flex col-span-10 space-y-5 pt-40 sm:pt-20 xs:pt-10">
+                <h1 class="max-w-xl text-xl front-bold text-start xs:text-base text-blue-400">10+ Years
+                    of Partnership with Telcos & Service Providers from
+                    80+ Countries</h1>
             </div>
         </div>
     </section>
-    <!--Awards-->
-    <section id="Awards">
-        <div class="max-w-6xl px-5 mx-auto mt-30 text-center space-y-5">
-            <h2 class="text-4xl front-bold text-center">Awards</h2>
-            <!--Awards Container-->
-            <div class="flex flex-row mt-24">
-                <!--Awards 1-->
-                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg  md:w-1/3">
-                    <img src="img/award-1.png" class="w-30 mt-14" alt="service" />
+    <!--Event-->
+    <section id="service" class="service-bg bg-myGreen-100 mt-14">
+        <div class="max-w-[85rem] lg:max-w-[70rem] md:max-w-[58rem] sm:max-w-[40rem] xs:max-w-[18rem] px-5 mx-auto text-center">
+            <h2 class="text-4xl font-semibold text-center pt-10 pb-10 sm:text-2xl xs:text-xl md:text-2xl">Here are the <span class="font-semibold animate-text">List of our Event</span> </h2>
+            <!--Events Container-->
+            <div class="grid grid-cols-3 gap-5 mb-5 xs:grid-cols-1 sm:grid-cols-2">
+                <!--Event-->
+                <div class="rounded-lg bg-gray-200 ">
+                    <div class="h-52 w-full">
+                        <img src="img/blog-1-720x480.jpg" class="w-full h-full rounded-t-lg" alt="service" />
+                    </div>
+                    <div class="h-12 w-30 text-lg front-bold pt-2">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white xs:text-base md:text-xl sm:text-base">Event One</h5>
+                    </div>
+                    <div class="h-12 w-30 text-sm">
+                        <p clas="mb-3 font-normal text-gray-300 dark:text-gray-400">Secured Communication Platforms for enterprises for faster real-time business communication & collaboration</p>
+                    </div>
+                    <div class="flex justify-end mb-2 ml-4 md:pr-2 sm:pr-2 lg:pr-2 xs:pr-2">
+                        <a href="#" class="font-medium  bg-green-400 text-white rounded-md px-3 py-1 xs:mt-5 xs:text-sm md:mt-5 md:font-thin">Read more</a>
+                    </div>
                 </div>
-                <!--Awards 2-->
-                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg  md:w-1/3">
-                    <img src="img/award-2.png" class="w-30 mt-14" alt="service" />
+                <div class="rounded-lg bg-gray-200 ">
+                    <div class="h-52 w-full">
+                        <img src="img/blog-2-720x480.jpg" class="w-full h-full rounded-t-lg" alt="service" />
+                    </div>
+                    <div class="h-12 w-30 text-lg front-bold pt-2">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white xs:text-base md:text-xl sm:text-base">Event Two</h5>
+                    </div>
+                    <div class="h-12 w-30 text-sm">
+                        <p clas="mb-3 font-normal text-gray-300 dark:text-gray-400">Secured Communication Platforms for enterprises for faster real-time business communication & collaboration</p>
+                    </div>
+                    <div class="flex justify-end mb-2 ml-4 md:pr-2 sm:pr-2 lg:pr-2 xs:pr-2">
+                        <a href="#" class="font-medium  bg-green-400 text-white rounded-md px-3 py-1 xs:mt-5 xs:text-sm md:mt-5 md:font-thin">Read more</a>
+                    </div>
                 </div>
-                <!--Awards 3-->
-                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg md:w-1/3">
-                    <img src="img/award-3.png" class="w-30 mt-14" alt="service" />
+                <div class="rounded-lg bg-gray-200 ">
+                    <div class="h-52 w-full">
+                        <img src="img/blog-3-720x480.jpg" class="w-full h-full rounded-t-lg" alt="service" />
+                    </div>
+                    <div class="h-12 w-30 text-lg front-bold pt-2">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white xs:text-base md:text-xl sm:text-base">Event Three</h5>
+                    </div>
+                    <div class="h-12 w-30 text-sm">
+                        <p clas="mb-3 font-normal text-gray-300 dark:text-gray-400">Secured Communication Platforms for enterprises for faster real-time business communication & collaboration</p>
+                    </div>
+                    <div class="flex justify-end mb-2 ml-4 md:pr-2 sm:pr-2 lg:pr-2 xs:pr-2">
+                        <a href="#" class="font-medium  bg-green-400 text-white rounded-md px-3 py-1 xs:mt-5 xs:text-sm md:mt-5 md:font-thin">Read more</a>
+                    </div>
                 </div>
+            </div>
+            <div class="flex justify-center pb-5">
+                <a href="#" class=" p-3 px-6 pt-2 text-white bg-green-400 rounded-full baseline font-semibold hover:bg-green-500">Explore
+                    All</a>
             </div>
         </div>
     </section>
+    <!--portfolio-->
+
+<section id="service" class="service-bg bg-white mt-14">
+    <div class="max-w-[85rem] lg:max-w-[70rem] md:max-w-[58rem] sm:max-w-[40rem] xs:max-w-[18rem] px-5 mx-auto text-center">
+        <h2 class="text-4xl font-semibold text-center pt-10 pb-10 sm:text-2xl xs:text-xl md:text-2xl ">Featuring some of the most amazing products <span class="font-semibold animate-text">we’ve had our tech-savvy hands in.</span> </h2>
+        <!--Portfolio Container-->
+        <div class="grid grid-cols-3 gap-5 mb-5 xs:grid-cols-1 sm:grid-cols-2">
+            <!--Portfolio-->
+            <div class="rounded-lg bg-gray-200">
+                <div class="h-52 w-full">
+                    <img src="img/award-1.png" class="w-full h-full rounded-t-lg" alt="service" />
+                </div>
+                <div class="h-12 w-30 text-lg front-bold pt-2">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white xs:text-base md:text-xl sm:text-base">Red Herring's</h5>
+                </div>
+                <div class="h-12 w-30 text-sm">
+                    <p clas="mb-3 font-normal text-gray-300 dark:text-gray-400">Secured Communication Platforms for enterprises for faster real-time business communication & collaboration</p>
+                </div>
+                <div class="flex justify-end mb-2 ml-4 md:pr-2 sm:pr-2 lg:pr-2 xs:pr-2">
+                    <a href="#" class="font-medium  bg-green-400 text-white rounded-md px-3 py-1 mt-5 xs:mt-8 xs:text-sm md:mt-5 md:font-thin sm:font-thin sm:mt-5">Read more</a>
+                </div>
+            </div>
+            <div class="rounded-lg bg-gray-200">
+                <div class="h-52 w-full">
+                    <img src="img/award-2.png" class="w-full h-full rounded-t-lg" alt="service" />  
+                </div>
+                <div class="h-12 w-30 text-lg front-bold pt-2">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white xs:text-base md:text-xl sm:text-base">Unified Communication</h5>
+                </div>
+                <div class="h-12 w-30 text-sm">
+                    <p clas="mb-3 font-normal text-gray-300 dark:text-gray-400">Secured Communication Platforms for enterprises for faster real-time business communication & collaboration</p>
+                </div>
+                <div class="flex justify-end mb-2 ml-4 md:pr-2 sm:pr-2 lg:pr-2 xs:pr-2">
+                    <a href="#" class="font-medium  bg-green-400 text-white rounded-md px-3 py-1 mt-5 xs:mt-8 xs:text-sm md:mt-5 md:font-thin sm:font-thin sm:mt-5">Read more</a>
+                </div>
+            </div>
+            <div class="rounded-lg bg-gray-200">
+                <div class="h-52 w-full">
+                    <img src="img/award-3.png" class="w-full h-full rounded-t-lg" alt="service" />
+                </div>
+                <div class="h-12 w-30 text-lg front-bold pt-2">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white xs:text-base md:text-xl sm:text-base">Technology Awards</h5>
+                </div>
+                <div class="h-12 w-30 text-sm">
+                    <p clas="mb-3 font-normal text-gray-300 dark:text-gray-400">Secured Communication Platforms for enterprises for faster real-time business communication & collaboration</p>
+                </div>
+                <div class="flex justify-end mb-2 ml-4 md:pr-2 sm:pr-2 lg:pr-2 xs:pr-2">
+                    <a href="#" class="font-medium  bg-green-400 text-white rounded-md px-3 py-1 mt-5 xs:mt-8 xs:text-sm md:mt-5 md:font-thin sm:font-thin sm:mt-5">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center pb-5">
+            <a href="#" class=" p-3 px-6 pt-2 text-white bg-green-400 rounded-full baseline font-semibold hover:bg-green-500">Explore
+                All</a>
+        </div>
+    </div>
+</section>
     <!--Gallery-->
-    <section id="product">
-        <div class="max-w-6xl px-5 mx-auto mt-30 text-center space-y-5">
-            <h2 class="text-4xl front-bold text-center">Events Participations</h2>
-            <!--Product Container-->
-            <div class="flex flex-row mt-24 space-x-5">
-                <!--Product 1-->
-                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-200 md:w-1/4">
-                    <img src="img/communic-asia.png" class="w-30 mt-14" alt="service" />
-                    <h5 class=" text-lg front-bold">CommunicAsia</h5>
+    <section id="service" class="service-bg bg-myGreen-100 mt-14">
+        <div class="max-w-[85rem] lg:max-w-[70rem] md:max-w-[58rem] sm:max-w-[40rem] xs:max-w-[18rem] px-5 mx-auto text-center">
+            <h2 class="text-4xl font-semibold text-center pt-10 pb-10 sm:text-2xl"><span class="font-semibold animate-text xs:text-xl md:text-2xl">Gallery</span> </h2>
+            <!--Events Container-->
+            <div class="grid grid-cols-3 gap-5 mb-5 md:grid-cols-3 xs:grid-cols-1 sm:grid-cols-2">
+                <!--Event-->
+                <div class="rounded-lg bg-gray-200">
+                    <div class="h-52 w-full">
+                        <img src="img/blog-1-720x480.jpg" class="w-full h-full rounded-t-lg" alt="event" />
+                    </div>
+                    <div class="h-12 w-30 text-lg front-bold pt-2">
+                        <a href="#" class="mb-2 text-2xl font-bold tracking-tight hover:text-green-500 text-gray-900 dark:text-white xs:text-base md:text-xl sm:text-base">Event Name</a>
+                    </div>
                 </div>
-                <!--Product 2-->
-                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-200 md:w-1/4">
-                    <img src="img/itw-chicago.png" class="w-30 mt-14" alt="service" />
-                    <h5 class=" text-lg front-bold">ITW Chicago</h5>
+                <div class="rounded-lg bg-gray-200">
+                    <div class="h-52 w-full">
+                        <img src="img/blog-2-720x480.jpg" class="w-full h-full rounded-t-lg" alt="event" />
+                    </div>
+                    <div class="h-12 w-30 text-lg front-bold pt-2">
+                        <a href="#" class="mb-2 text-2xl font-bold tracking-tight hover:text-green-500 text-gray-900 dark:text-white xs:text-base md:text-xl sm:text-base">Event Name</a>
+                    </div>
                 </div>
-                <!--Product 3-->
-                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-200 md:w-1/4">
-                    <img src="img/capacity-europe.png" class="w-30 mt-14" alt="service" />
-                    <h5 class=" text-lg front-bold">Capacity Europe</h5>
-                </div>
-                <!--Product 4-->
-                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-200 md:w-1/4">
-                    <img src="img/africa.png" class="w-30 mt-14" alt="service" />
-                    <h5 class=" text-lg front-bold">Africa.com</h5>
+                <div class="rounded-lg bg-gray-200">
+                    <div class="h-52 w-full">
+                        <img src="img/blog-3-720x480.jpg" class="w-full h-full rounded-t-lg" alt="event" />
+                    </div>
+                    <div class="h-12 w-30 text-lg front-bold pt-2">
+                        <a href="#" class="mb-2 text-2xl font-bold tracking-tight hover:text-green-500 text-gray-900 dark:text-white xs:text-base md:text-xl sm:text-base">Event Name</a>
+                    </div>
                 </div>
             </div>
-            <div class="flex justify-center">
-                <a href="" class=" p-3 px-6 pt-2 text-white bg-blue-400 rounded-full baseline hover:bg-blue-500">View
-                    More</a>
+            <div class="flex justify-center pb-5">
+                <a href="#" class=" p-3 px-6 pt-2 text-white bg-green-400 rounded-full baseline font-semibold hover:bg-green-500">Explore
+                    All</a>
             </div>
         </div>
     </section>
     <!--Footer-->
-    <footer class="bg-black">
-        <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-col md:space-y-0">
-            <!--Logo and Social link-->
-            <div class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
-                <!--Logo-->
+    <footer>
+        <div class=" w-full">
+            <img src="img/footer-bg.png" class="mx-auto" />
+        </div>
+        <div class="bg-myBlack-100 pl-5 pr-5 text-sm">
+            <div class="max-w-[85rem] md:max-w-[57rem] sm:max-w-[40rem] xs:max-w-[18rem] mx-auto grid grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 pt-6 gap-10 ">
                 <div>
-                    <img src="img/logo.svg" class="h-8" alt="logo"/>
+                    <div class="h-8">
+                        <img src="img/logo.svg " class="h-full" />
+                    </div>
+                    <p class="text-gray-400 text-left py-6">Best Software Development Company To Architect The Dream For Next Generation.</p>
+                    <div class="flex mb-6">
+                        <a href="#!" type="button" class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1 ">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="w-2 h-full mx-auto " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                            </svg>
+                        </a>
+                        <a href="#!" type="button" class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="w-3 h-full mx-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                            </svg>
+                        </a>
+                        <a href="#!" type="button" class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google" class="w-3 h-full mx-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
+                                <path fill="currentColor" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path>
+                            </svg>
+                        </a>
+                        <a href="#!" type="button" class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="w-3 h-full mx-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <!--Social Link-->
-                <div class="flex justify-center space-x-4">
-                    <a href="">
-                        <img src="img/icon-facebook.svg" class="h-8" alt="" />
-                    </a>
-                    <a href="">
-                        <img src="img/icon-youtube.svg" class="h-8" alt="" />
-                    </a>
-                    <a href="">
-                        <img src="img/icon-instagram.svg" class="h-8" alt="" />
-                    </a>
-                    <a href="">
-                        <img src="img/icon-twitter.svg" class="h-8" alt="" />
-                    </a>
+                <div>
+                    <p class="text-white w-full border-b border-gray-500 text-left pb-3"> Address</p>
+                    <p class="text-gray-400 pt-4 text-left">Nikunjo-1, Khilkhet, Dhaka-1229</p>
+                    <div class="flex space-x-4">
+                        <div class="mt-4">
+                            <p class="text-gray-400 text-left font-semibold">Email:</p>
+                            <p class="text-gray-400 text-left  xs:text-xs">business@gmail.com</p>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-gray-400 text-left font-semibold">phone:</p>
+                            <p class="text-gray-400 text-left xs:text-xs">+8801712345678</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-left border-b border-gray-400 pb-3 text-white">Useful links</p>
+                    <div class="grid  grid-cols-3 mt-5">
+                        <div class="mb-6">
+                            <ul class="list-none mb-0">
+                                <li class="flex justify-start">
+                                    <a href="service.html" class="text-gray-400  xs:text-xs hover:text-green-500">Service</a>
+                                </li>
+                                <li class="flex justify-start">
+                                    <a href="contact.html" class="text-gray-400  xs:text-xs hover:text-green-500">Contact Us</a>
+                                </li>
+                                <li class="flex justify-start">
+                                    <a href="aboutus.html" class="text-gray-400  xs:text-xs hover:text-green-500">About Us</a>
+                                </li>
+                                <li class="flex justify-start">
+                                    <a href="portfolio.html" class="text-gray-400  xs:text-xs hover:text-green-500">Portfolio</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mb-6">
+                            <ul class="list-none mb-0">
+                                <li class="flex justify-start">
+                                    <a href="gallery.html" class="text-gray-400  xs:text-xs hover:text-green-500">Gallery</a>
+                                </li>
+                                <li class="flex justify-start">
+                                    <a href="team.html" class="text-gray-400  xs:text-xs hover:text-green-500">Team</a>
+                                </li>
+                                <li class="flex justify-start">
+                                    <a href="message.html" class="text-gray-400  xs:text-xs hover:text-green-500">Message</a>
+                                </li>
+                                <li class="flex justify-start">
+                                    <a href="faq.html" class="text-gray-400  xs:text-xs hover:text-green-500">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mb-6">
+                            <ul class="list-none mb-0">
+                                <li class="flex justify-start">
+                                    <a href="mission-vision.html" class="text-gray-400  xs:text-xs hover:text-green-500">Mission Vision</a>
+                                </li>
+                                <li class="flex justify-start">
+                                    <a href="#" class="text-gray-400  xs:text-xs hover:text-green-500">Privacy Policy</a>
+                                </li>
+                                <li class="flex justify-start">
+                                    <a href="#" class="text-gray-400  xs:text-xs hover:text-green-500">Terms & Condition</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="flex justify-around space-x-0">
-                <div class="flex  flex-col space-y-3 text-white">
-                    <a href="#" class="hover:text-blue-500">Home</a>
-                    <a href="#" class="hover:text-blue-500">Service</a>
-                    <a href="#" class="hover:text-blue-500">Event</a>
-                    <a href="#" class="hover:text-blue-500">Contact</a>
-                </div>
-                <div class="flex  flex-col space-y-3 text-white">
-                    <a href="team.html" class="hover:text-blue-500">Teams</a>
-                    <a href="#" class="hover:text-blue-500">Privacy Policy</a>
-                    <a href="#" class="hover:text-blue-500">Terms & Condition</a>
-                    <a href="message.html" class="hover:text-blue-500">Message</a>
-                </div>
+            <div class="text-center p-4 bg-myBlack-100">
+                <p class="text-white">© 2023 Copyright: <a class="text-white" href="https://github.com/HadiUzzaman04">Hadiuzzaman</a></p>
             </div>
         </div>
+    
     </footer>
 </body>
 

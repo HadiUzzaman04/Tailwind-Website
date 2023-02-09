@@ -1,3 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* .service-bg{
+    background-image: url('../../public/images/service-bg.png');
+}
+.event-bg{
+    background-image: url('../../public/images/event-bg.png');
+}
+.portfolio-bg{
+    background-image: url('../../public/images/portfolio-bg.png');
+}
+.company-bg{
+    background-image: url('../../public/images/company-bg.jpg');
+}
+.slider-bg{
+    background-image: url('../../public/images/company-bg.jpg');
+} */
+
+
+.shape_rotated::after {
+    content: "";
+    width: 700px;
+    height: 750px;
+    position: absolute;
+    top: -190px;
+    right: 170px;
+    background: #e6f9ef;
+    transform: rotate(-13deg);
+    border-radius: 50px;
+    z-index: -20;
+}
+
+.animate-text {
+    background: linear-gradient(
+        90deg,
+        #1506e7,
+        #39FA88,
+        #f1085e,
+        #063cec,
+        #ff00c4,
+        #E12A6D
+    );
+    background-size: 400%;
+    /* font-size: 50px; */
+    /* letter-spacing: 5px; */
+    font-weight: 600;
+    word-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+.slick-prev:before,
+.slick-next:before {
+    color: #4ade80 !important;
+    font-size: 32px !important;
+}
+
+.lottie{
+    width: 600px;
+    height: 500px;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .lottie{
+        width: 400px;
+        height: 370px;
+    }
+    .shape_rotated::after {
+        width: 700px;
+        height: 550px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .lottie{
+        width: 350px;
+        height: 470px;
+    }
+    .shape_rotated::after {
+        width: 450px;
+        height: 550px;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .lottie{
+        width: 350px;
+        height: 350px;
+    }
+    .shape_rotated::after {
+        width: 450px;
+        height: 550px;
+    }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .lottie{
+        width: 250px;
+        height: 300px;
+    }
+    .shape_rotated::after {
+        width: 450px;
+        height: 600px;
+    }
+}
+
+#btnScrollToTop {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4ade80;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    fill: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
